@@ -39,7 +39,9 @@ OUTPUT: values provided by the c++ program to the simulator
 ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/1.png)
 
 #The input data file:
+
 /data/obj_pose-laser-radar-synthetic-input.txt
+
 The simulator is using this data file, and feed main.cpp values from it one line at a time.
 
 Each row represents a sensor measurement where the first column indicates if the measurement comes from radar (R) or lidar (L).
