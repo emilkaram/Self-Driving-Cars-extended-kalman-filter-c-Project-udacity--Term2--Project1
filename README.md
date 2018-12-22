@@ -104,7 +104,7 @@ On the other hand, radar uses non-linear equations, so the update step involves 
  
  
  # Conclusion:
-My algorithm run against Dataset 1 and 2 in the simulator which is the same as "data/obj_pose-laser-radar-synthetic-input.txt" in the repository and px, py, vx, and vy RMSEs wereless than the values [.11, .11, 0.52, 0.52].
+My algorithm run against Dataset 1 and 2 in the simulator which is the same as "data/obj_pose-laser-radar-synthetic-input.txt" in the repository and px, py, vx, and vy RMSEs were less than the values [.11, .11, 0.52, 0.52].
 
 
 
