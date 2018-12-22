@@ -1,7 +1,7 @@
 # Extended Kalman Filter Project
 Self-Driving Car Engineer Nanodegree Program - Term2 - Project1
 
-![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/3.pngg)
+![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/3.png)
 
 
 In this project I utilized a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Calculating the RMSE values are KPI to measure performance. 
