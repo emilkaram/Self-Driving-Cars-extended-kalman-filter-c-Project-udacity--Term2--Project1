@@ -36,6 +36,9 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ## Project Instructions and Rubric
 
+![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/1.png)
+
+
 Note: regardless of the changes you make, your project must be buildable using
 cmake and make!
 
