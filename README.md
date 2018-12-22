@@ -54,6 +54,28 @@ Whereas radar has three measurements (rho, phi, rhodot), lidar has two measureme
 
 I used the measurement values and timestamp in my Kalman filter algorithm. Groundtruth, which represents the actual path the bicycle took, is for calculating root mean squared error.
 
+The three main steps for programming a Kalman filter:
+initializing Kalman filter variables
+predicting where our object is going to be after a time step \Delta{t}Δt
+updating where our object is based on sensor measurements
+
+Then the prediction and update steps repeat themselves in a loop.
+
+To measure how well my Kalman filter performs, I calculated root mean squared error comparing the Kalman filter results with the provided ground truth.
+
+and the results meet the cretira:
+
+Dataset(1):
+
+![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/4.png)
+
+Dataset(2):
+
+![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/5.png)
+
+
+#FusionEKF.cpp
+
 
 
  
