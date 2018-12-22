@@ -6,7 +6,7 @@ Self-Driving Car Engineer Nanodegree Program - Term2 - Project1
 
 In this project I utilized a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Calculating the RMSE values as KPIs to measure performance. 
 
-The project code is c++ and uses a Simulator to demonstarte the EKF.
+The project code is c++ and uses a Simulator to  demonstrate the EKF.
 
  I used either Linux for coding and run the simulator on Windows 10 using a port forward from the VM (Oracle VM virtualBox. 
  
@@ -84,7 +84,7 @@ I modified the F and Q matrices prior to the prediction step based on the elapse
 
 call the update step for either the lidar or radar sensor measurement.
 
-In case of radarmesurments I converted from polar to cartesian coordinates 
+In case of radar measurements I converted from polar to cartesian coordinates 
    ekf_.x_ << rho * cos(phi), rho * sin(phi), rhodot * cos(phi), rhodot * sin(phi);
 
 
@@ -96,6 +96,18 @@ Because lidar uses linear equations, in the update step I used the basic Kalman 
 
 On the other hand, radar uses non-linear equations, so the update step involves linearizing the equations with the Jacobian matrix. 
 
- 
+ # Tools.cpp:
+ in Tools.ccp i calculated  the RMSE and Jacobian matrix
 
  ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/6.png)
+ 
+ 
+ 
+ # Conclusion:
+My algorithm run against Dataset 1 and 2 in the simulator which is the same as "data/obj_pose-laser-radar-synthetic-input.txt" in the repository and px, py, vx, and vy RMSEs wereless than the values [.11, .11, 0.52, 0.52].
+
+
+
+ 
+ 
+ 
