@@ -34,12 +34,24 @@ OUTPUT: values provided by the c++ program to the simulator
 ["rmse_vy"]
 
 
-## Project Instructions and Rubric
+## Project description:
 
 ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/1.png)
 
+#The input data file:
+/data/obj_pose-laser-radar-synthetic-input.txt
+The simulator is using this data file, and feed main.cpp values from it one line at a time.
 
- 
-## Hints and Tips!
+Each row represents a sensor measurement where the first column indicates if the measurement comes from radar (R) or lidar (L).
+
+For a row containing radar data, the columns are: sensor_type, rho_measured, phi_measured, rhodot_measured, timestamp, x_groundtruth, y_groundtruth, vx_groundtruth, vy_groundtruth, yaw_groundtruth, yawrate_groundtruth.
+
+For a row containing lidar data, the columns are: sensor_type, x_measured, y_measured, timestamp, x_groundtruth, y_groundtruth, vx_groundtruth, vy_groundtruth, yaw_groundtruth, yawrate_groundtruth.
+
+Whereas radar has three measurements (rho, phi, rhodot), lidar has two measurements (x, y).
+
+I used the measurement values and timestamp in my Kalman filter algorithm. Groundtruth, which represents the actual path the bicycle took, is for calculating root mean squared error.
+
+
 
  
