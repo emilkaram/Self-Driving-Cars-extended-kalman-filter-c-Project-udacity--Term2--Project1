@@ -38,7 +38,7 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/1.png)
 
-#The input data file:
+# The input data file:
 
 /data/obj_pose-laser-radar-synthetic-input.txt
 
@@ -63,7 +63,7 @@ Then the prediction and update steps repeat themselves in a loop.
 
 To measure how well my Kalman filter performs, I calculated root mean squared error comparing the Kalman filter results with the provided ground truth.
 
-and the results meet the cretira:
+and the results met the rubric criteria:
 
 Dataset(1):
 
@@ -74,8 +74,28 @@ Dataset(2):
 ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/5.png)
 
 
-#FusionEKF.cpp
+# FusionEKF.cpp
+
+I initialized variables and matrices (x, F, H_laser, H_jacobian, P, etc.)
+
+I initialized the Kalman filter position vector with the first sensor measurements
+
+I modified the F and Q matrices prior to the prediction step based on the elapsed time between measurements
+
+call the update step for either the lidar or radar sensor measurement.
+
+In case of radarmesurments I converted from polar to cartesian coordinates 
+   ekf_.x_ << rho * cos(phi), rho * sin(phi), rhodot * cos(phi), rhodot * sin(phi);
 
 
+# KalmanFilter Class:
+
+kalman_filter.h defines the KalmanFilter class containing the x vector as well as the P, F, Q, H and R matrices. The KalmanFilter class also contains functions for the prediction step as well as the Kalman filter update step (lidar) and extended Kalman filter update step (radar).
+
+Because lidar uses linear equations, in the update step I used the basic Kalman filter equations. 
+
+On the other hand, radar uses non-linear equations, so the update step involves linearizing the equations with the Jacobian matrix. 
 
  
+
+ ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/5.png)
