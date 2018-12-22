@@ -98,4 +98,4 @@ On the other hand, radar uses non-linear equations, so the update step involves 
 
  
 
- ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/5.png)
+ ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/6.png)
