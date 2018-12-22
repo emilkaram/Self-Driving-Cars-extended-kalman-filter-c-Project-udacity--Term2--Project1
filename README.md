@@ -38,7 +38,7 @@ OUTPUT: values provided by the c++ program to the simulator
 
 ![](https://github.com/emilkaram/Self-Driving-Cars-extended-kalman-filter-c-Project-udacity--Term2--Project1/blob/master/img/1.png)
 
-# The input data file:
+# The input data:
 
 /data/obj_pose-laser-radar-synthetic-input.txt
 
